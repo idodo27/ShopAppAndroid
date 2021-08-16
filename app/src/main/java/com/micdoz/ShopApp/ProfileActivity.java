@@ -52,7 +52,7 @@ public class ProfileActivity extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         fUser = fAuth.getCurrentUser();
         db = FirebaseDatabase.getInstance();
-        dbRef = db.getReference("shopapp-e8021-default-rtdb");
+        dbRef = db.getReference("path_to_firebase_database");
         fName = (TextView) findViewById(R.id.firstNameProf);
         lName = (TextView) findViewById(R.id.lastNameProf);
         email = (TextView) findViewById(R.id.EmailTextProf);
