@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "356499528857",
-    "project_id": "shopapp-e8021",
-    "storage_bucket": "shopapp-e8021.appspot.com"
+    "project_number": "project_number",
+    "project_id": "project_id",
+    "storage_bucket": "storage_bucket"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:356499528857:android:7bf332834a3a0813072c08",
+        "mobilesdk_app_id": "mobiledesk_app_id",
         "android_client_info": {
-          "package_name": "com.micdoz.ShopApp"
+          "package_name": "package_name"
         }
       },
       "oauth_client": [
         {
-          "client_id": "356499528857-6ksfq2cs96oksrbdjs14796d2fl1j0i4.apps.googleusercontent.com",
+          "client_id": "client_id",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCrgSqDAt_q86oqzKi5KZfBT0evNMCtQj4"
+          "current_key": "current_key"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "356499528857-6ksfq2cs96oksrbdjs14796d2fl1j0i4.apps.googleusercontent.com",
+              "client_id": "client_id",
               "client_type": 3
             }
           ]
