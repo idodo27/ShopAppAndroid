@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ShopApp</string>
+    <string name="enter_your_last_name">Enter Your Last Name</string>
+    <string name="enter_your_first_name">Enter Your First Name</string>
+    <string name="clear">Clear</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign in</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="dont_have_an_account_n_register">Don\'t have An Account?</string>
+    <string name="passQuestion">\?</string>
+    <string name="show_cart">show cart</string>
+    <string name="log_out">Log Out</string>
+    <string name="update">Update</string>
+    <string name="clear_cart">Clear cart</string>
+    <string name="confirm">Confirm</string>
+    <string name="back_to_shopping">Back to Shopping</string>
+    <string name="profile">Profile</string>
+    <string name="hide_cart">Hide Cart</string>
+    <string name="delete_account">Delete\nAccount</string>
+    <string name="back_to_display_mode">Back to\nDisplay Mode</string>
+</resources>

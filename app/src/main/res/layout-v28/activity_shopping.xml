@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFFF"
+    tools:context=".ShoppingActivity">
+
+
+    <TextView
+        android:id="@+id/nameForUser"
+        android:layout_width="87dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="98dp"
+        android:background="#00BFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameForUser" />
+
+
+    <ListView
+        android:id="@+id/cart_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showCart" />
+
+    <ListView
+        android:id="@+id/product_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showCart" />
+
+
+    <Button
+        android:id="@+id/logOutButton"
+        android:layout_width="71dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="logOut"
+        android:text="@string/log_out"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/toProfileButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/showCart"
+        android:layout_width="71dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="showUserCart"
+        android:text="@string/show_cart"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/nameForUser"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/hideCart"
+        android:layout_width="71dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="hideMyCart"
+        android:text="@string/hide_cart"
+        android:textSize="11sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/nameForUser"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/clearCart"
+        android:layout_width="71dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="clearCart"
+        android:text="@string/clear_cart"
+        android:textSize="11sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/toProfileButton"
+        app:layout_constraintTop_toBottomOf="@+id/logOutButton"
+        tools:ignore="SmallSp,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/toProfileButton"
+        android:layout_width="71dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:textSize="11sp"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/profile"
+        android:onClick="showProfile"
+        app:layout_constraintStart_toEndOf="@+id/showCart"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp,UsingOnClickInXml" />
+</androidx.constraintlayout.widget.ConstraintLayout>

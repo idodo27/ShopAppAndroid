@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFFF"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/firstNameProf"
+        android:layout_width="154dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lastNameProf"
+        android:layout_width="154dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameProf" />
+
+    <TextView
+        android:id="@+id/EmailTextProf"
+        android:layout_width="154dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameProf" />
+
+    <TextView
+        android:id="@+id/passwordTextProf"
+        android:layout_width="154dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailTextProf" />
+
+    <EditText
+        android:id="@+id/firstNameEdit"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:hint="@string/enter_your_first_name"
+        android:visibility="invisible"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp" />
+
+    <EditText
+        android:id="@+id/lastNameEdit"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/enter_your_last_name"
+        android:visibility="invisible"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameProf"
+        tools:ignore="SmallSp" />
+
+    <EditText
+        android:id="@+id/EmailEditProf"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/enter_your_email"
+        android:visibility="invisible"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameProf"
+        tools:ignore="SmallSp" />
+
+    <EditText
+        android:id="@+id/passwordEditProf"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/enter_your_password"
+        android:visibility="invisible"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailTextProf"
+        tools:ignore="SmallSp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="showUpdateMode"
+        android:text="@string/update"
+        app:layout_constraintStart_toEndOf="@+id/firstNameProf"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/confirmUpdateButton"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="applyChanges"
+        android:text="@string/confirm"
+        app:layout_constraintStart_toEndOf="@+id/firstNameProf"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="moveToShopping"
+        android:text="@string/back_to_shopping"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/firstNameProf"
+        app:layout_constraintTop_toBottomOf="@+id/confirmUpdateButton"
+        tools:ignore="SmallSp,UsingOnClickInXml" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="deleteUser"
+        android:text="@string/delete_account"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/firstNameProf"
+        app:layout_constraintTop_toBottomOf="@+id/confirmUpdateButton"
+        tools:ignore="SmallSp,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/displayButton"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_corners"
+        android:onClick="showDisplayMode"
+        android:text="@string/back_to_display_mode"
+        android:textSize="11sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/firstNameProf"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp,UsingOnClickInXml" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

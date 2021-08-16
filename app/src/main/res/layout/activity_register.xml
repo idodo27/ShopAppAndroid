@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BFFF"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="275dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corners"
+        android:hint="@string/enter_your_first_name"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="275dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corners"
+        android:hint="@string/enter_your_last_name"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstName" />
+
+    <EditText
+        android:id="@+id/EmailTextRegister"
+        android:layout_width="275dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corners"
+        android:ems="10"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastName" />
+
+    <EditText
+        android:id="@+id/passwordTextRegister"
+        android:layout_width="275dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corners"
+        android:ems="10"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailTextRegister" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/round_button"
+        android:onClick="registerMoveLogin"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        app:backgroundTint="#7BC2C8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toEndOf="@+id/ClearButton"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextRegister" />
+
+    <Button
+        android:id="@+id/ClearButton"
+        android:layout_width="110dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/round_button"
+        android:text="@string/clear"
+        android:onClick="clearFields"
+        android:textColor="@color/black"
+        app:backgroundTint="#7BC2C8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextRegister" />
+
+    <Button
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/round_button"
+        android:onClick="passwordHint"
+        android:text="@string/passQuestion"
+        android:textColor="@color/black"
+        app:backgroundTint="#00BFFF"
+        app:layout_constraintStart_toEndOf="@+id/passwordTextRegister"
+        app:layout_constraintTop_toBottomOf="@+id/EmailTextRegister"
+        tools:ignore="SmallSp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
