@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
         /*
             change to your database name.
          */
-        dbRef = db.getReference("shopapp-e8021-default-rtdb");
+        dbRef = db.getReference("path_to_firebase_database");
 
     }
 
