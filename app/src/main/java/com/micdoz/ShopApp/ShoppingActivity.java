@@ -81,7 +81,7 @@ public class ShoppingActivity extends AppCompatActivity {
             Toast.makeText(this, "no user", Toast.LENGTH_SHORT).show();
         }
         db = FirebaseDatabase.getInstance();
-        dbRef = db.getReference("shopapp-e8021-default-rtdb");
+        dbRef = db.getReference("path_to_firebase_database");
         if(getIntent().getStringExtra("user_id") == null){
             userId = fUser.getUid();
         }
