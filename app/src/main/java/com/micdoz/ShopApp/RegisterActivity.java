@@ -40,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.passwordTextRegister);
         fAuth = FirebaseAuth.getInstance();
         db = FirebaseDatabase.getInstance();
-        dbRef = db.getReference("shopapp-e8021-default-rtdb");
+        dbRef = db.getReference("path_to_firebase_database");
     }
 
     public void passwordHint(View view) {
